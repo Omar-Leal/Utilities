@@ -1,0 +1,45 @@
+CONFIGURAR VARIABLES DE ENTORNO
+-> git config --global user.name "My name"
+-> git config --global user.mail  "personalmail@mail.com"  
+-> git config --list
+
+CONTROL REPOSITORIO LOCAL
+# Iniciar un repositorio local
+-> git init
+# Agregar un repositorio y sus cambios al stagging area
+-> git add .  o git add archivo.txt
+# Eliminar un repositorio del stagging area
+-> git rm --cached archivo.txt
+# Agregar archivos, cambios al repositorio local final
+-> git commit -m "mensaje va aca"
+
+REVISIÓN DEL ESTADO DEL REPOSITORIO Y COMMITS REALIZADOS
+# Revisar el estatus de nuestro repostorio y area de trabajo
+-> git status
+# Mostrar el historial de commits hechos desde el primero al más reciente
+-> git log
+# Mostrar hilos de cambios de cada commit desde el reciente hasta el primero
+-> git log --stat
+# Mostrar los cambios efectuados a un archivo
+-> git show archivo.txt
+# Mostrar la diferencia entre dos versiones de commits
+-> git diff #commit1 #commit2
+# Mostrar la diferencia entre mi directorio local y mi repo local
+-> git diff
+
+VOLVER EN EL TIMEPO    
+# Volver en el tiempo en GIT (GIT RESET SOFT) lo que está en stagging permanece allí
+->  git reset #comit --soft
+# Volver todo hacia atrás borrando cambios realizados (GIT RESET HARD) borra todo el stagging
+-> git reset #commit --hard
+# Para ver un cambio especifico de commit anterior
+-> git checkout #commit archivo.txt  
+   Este git checkout mantiene los cambios del último commit al master.
+   Si se hace un commit de este checkout regreso al estado del commit llamado en el checkout.
+# Para regresar al estado de último commit solo llamamos a  master que es donde apunta el HEAD
+-> git checkout master archivo.txt
+
+
+Flujo de trabajo básico con un repositorio remoto
+#Crear una rama a partir de la rama actual (donde apunta el HEAD)
+-> git
