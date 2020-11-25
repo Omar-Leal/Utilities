@@ -3,6 +3,8 @@
 -> git config --global user.mail  "personalmail@mail.com"  
 -> git config --list
 
+
+
 # CONTROL REPOSITORIO LOCAL
 ## Iniciar un repositorio local
 -> git init
@@ -12,6 +14,8 @@
 -> git rm --cached archivo.txt
 ## Agregar archivos, cambios al repositorio local final
 -> git commit -m "mensaje va aca"
+
+
 
 # REVISIÓN DEL ESTADO DEL REPOSITORIO Y COMMITS REALIZADOS
 ## Revisar el estatus de nuestro repostorio y area de trabajo
@@ -27,6 +31,7 @@
 ## Mostrar la diferencia entre mi directorio local y mi repo local
 -> git diff
 
+
 # VOLVER EN EL TIMEPO    
 ## Volver en el tiempo en GIT (GIT RESET SOFT) lo que está en stagging permanece allí
 ->  git reset #comit --soft
@@ -40,6 +45,7 @@
 -> git checkout master archivo.txt
 
 
+
 # FLUJO DE TRABAJO BÁSICO CON UN REPOSITORIO REMOTO
 ## Crear una rama a partir de la rama actual (donde apunta el HEAD)
 -> git branch nombre_rama
@@ -49,6 +55,8 @@
 -> git branch -d nombre_rama
 ## Para movernos entre ramas
 -> git checkout nombre_rama
+
+
 
 CONEXIÓN CON REPOSITORIO REMOTO VIA HTTP (GITHUB)
 ## Conectar mediante https
@@ -61,6 +69,8 @@ CONEXIÓN CON REPOSITORIO REMOTO VIA HTTP (GITHUB)
 -> git pull origin master
 ## Para forzar el merge del repositorio remoto con el local debido a historias no relacionadas
 -> git pull origin --allow-unrelated-histories
+
+
 
 
 # GENERAR LLAVE SSH EN MI ENTORNO LOCAL
@@ -76,6 +86,8 @@ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 ## Verificar cambios
 -> git remote -v
 
+
+
 # CONECTAR REPOSITORIO LOCAL CON EL REMOTO VIA SSH
 ## Haciendo merge entre repositorio remoto y local
 -> git remote add pepito <url-ssh>
@@ -83,6 +95,8 @@ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 -> git pull pepito master
 ## Enviar cambios locales al repostiorio local
 -> git push pepito master
+
+
 
 # TAGS Y VERSIONES EN GIT Y GITHUB
 ## Para ver todo el historial de log detallado y comprimido
