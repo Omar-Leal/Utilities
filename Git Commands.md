@@ -69,8 +69,15 @@ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 # Comprobar proceso del servidor de llaves(Linux/Windows)
 -> eval $(ssh-agent -s)
 # Agregar la llave a ese servidor
---> ssh-add ~/.ssh/id_rsa
+-> ssh-add ~/.ssh/id_rsa
 
+# Cambiar la URL(HTTP) por la URL-SSH
+-> git remote set-url origin git@github.com:Omar-Leal/Utilities.git
+# Verificar cambios
+-> git remote -v
 
-
-
+CONECTAR REPOSITORIO LOCAL CON EL REMOTO VIA SSH
+# Haciendo merge entre repositorio remoto y local
+-> git remote add pepito <url-ssh>
+# Antes de hacer un commit al servidor remoto, traerme los cambios del repositorio remoto
+-> 
