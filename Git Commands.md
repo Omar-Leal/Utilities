@@ -50,3 +50,27 @@ Flujo de trabajo básico con un repositorio remoto
 # Para movernos entre ramas
 -> git checkout nombre_rama
 
+CONEXIÓN CON REPOSITORIO REMOTO VIA HTTP (GITHUB)
+# Conectar mediante https
+-> git remote add origin https://url-del-RepositorioRemoto.com
+# Para checar que origin fue creado
+-> git remote    (El output debe arrojar "origin")
+# Para ver el tipo de origin (fetch and push)
+-> git remote -v
+# Antes de hacer el primer envio al master remoto, debemos traernos lo que esta en remoto para integrarlo al local
+-> git pull origin master
+# Para forzar el merge del repositorio remoto con el local debido a historias no relacionadas
+-> git pull origin --allow-unrelated-histories
+
+
+GENERAR LLAVE SSH EN MI ENTORNO LOCAL
+# Agregando la llave SSH al /home
+ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
+# Comprobar proceso del servidor de llaves(Linux/Windows)
+-> eval $(ssh-agent -s)
+# Agregar la llave a ese servidor
+--> ssh-add ~/.ssh/id_rsa
+
+
+
+
