@@ -84,3 +84,6 @@ CONECTAR REPOSITORIO LOCAL CON EL REMOTO VIA SSH
 # Enviar cambios locales al repostiorio local
 -> git push pepito master
 
+TAGS Y VERSIONES EN GIT Y GITHUB
+# Para ver todo el historial de log detallado y comprimido
+-> git log --all --oneline --graph --decorate
