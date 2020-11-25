@@ -55,6 +55,8 @@
 -> git branch -d nombre_rama
 ## Para movernos entre ramas
 -> git checkout nombre_rama
+## Para las ramas que existen de manera detallada
+-> git show-branch
 
 
 
