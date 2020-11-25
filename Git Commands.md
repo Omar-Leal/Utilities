@@ -99,15 +99,15 @@ ssh-keygen -t rsa -b 4096 -C "youremail@example.com"
 
 
 # TAGS Y VERSIONES EN GIT Y GITHUB
-## Para ver todo el historial de log detallado y comprimido
+> Para ver todo el historial de log detallado y comprimido
 -> git log --all --oneline --graph --decorate
-## Creando un tag a partir de un ID de un commit
+> Creando un tag a partir de un ID de un commit
 -> git tag -a v.0.1 -m "Agregando identificador de primera version" #commit
-## Ver lista de los tags que tenemos en el proyecto de manera simple
+> Ver lista de los tags que tenemos en el proyecto de manera simple
 -> git tag
-## Para ver a cuál commit está conectado un tag y versión
+> Para ver a cuál commit está conectado un tag y versión
 -> git tag show-ref --tags
-## Enviar el tag a Github o repositorio remoto 
+> Enviar el tag a Github o repositorio remoto 
 -> git push pepito --tags
-## Eliminar tag 
+> Eliminar tag 
 -> git tag -d nombre_tag
