@@ -80,4 +80,7 @@ CONECTAR REPOSITORIO LOCAL CON EL REMOTO VIA SSH
 # Haciendo merge entre repositorio remoto y local
 -> git remote add pepito <url-ssh>
 # Antes de hacer un commit al servidor remoto, traerme los cambios del repositorio remoto
--> 
+-> git pull pepito master
+# Enviar cambios locales al repostiorio local
+-> git push pepito master
+
