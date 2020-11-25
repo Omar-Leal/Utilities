@@ -94,3 +94,6 @@ TAGS Y VERSIONES EN GIT Y GITHUB
 ## Para ver a cuál commit está conectado un tag y versión
 -> git tag show-ref --tags
 ## Enviar el tag a Github o repositorio remoto 
+-> git push pepito --tags
+## Eliminar tag 
+-> git tag -d nombre_tag
