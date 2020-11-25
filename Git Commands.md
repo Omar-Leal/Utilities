@@ -42,4 +42,11 @@ VOLVER EN EL TIMEPO
 
 Flujo de trabajo básico con un repositorio remoto
 #Crear una rama a partir de la rama actual (donde apunta el HEAD)
--> git
+-> git branch nombre_rama
+# Ver ramas creadas
+-> git branch
+# Borrar alguna rama
+-> git branch -d nombre_rama
+# Para movernos entre ramas
+-> git checkout nombre_rama
+
